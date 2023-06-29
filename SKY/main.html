@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">skyface</a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="search">
+                <div class="textBox">
+                    <input type="text" placeholder="Search...">
+                    
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+
+                </div>
+                
+                
+
+                <!--icons-->
+                <div class="icons">
+                    <ion-icon name="search-outline" class="searchBtn active"></ion-icon>
+                   
+                    
+                    <ion-icon name="person-circle-outline" class="signUp"></ion-icon>
+                    <ion-icon name="menu-outline"></ion-icon>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="account">
+        <ion-icon name="close-outline" class="SignClsBtn"></ion-icon>
+        <h1>Sign Up</h1>
+
+        <div class="tags">
+            <label for="">First Name</label>
+        
+        <input type="text" placeholder="Enter your first name">
+
+        </div>
+        <div class="tags">
+            <label for="">Last Name</label>
+        <input type="text" placeholder="Enter your Last name">
+
+        </div>
+        <div class="tags">
+            <label for="">email</label>
+        <input type="text" placeholder="Enter your email">
+
+        </div>
+        <div class="tags">
+            <label for="">Password</label>
+        <input type="text" placeholder="Enter your password">
+
+        </div>
+        <p>i already have an account <a href="#" class="signIn"> Sign In</a></p>
+        
+        <button class="signBtn">Sign Up</button>
+        
+
+        
+    </div>
+
+    <div class="logIn">
+        <ion-icon name="close-outline" class="SignUpClsBtn"></ion-icon>
+        <h1>Sign In</h1>
+
+        <div class="tags">
+            <label for="">Username</label>
+        
+        <input type="text" placeholder="Enter your Username">
+
+        </div>
+
+        <div class="tags">
+            <label for="">Password</label>
+        
+        <input type="text" placeholder="Enter your first name">
+
+        <p>I already have an account <a href="#"> Sign In</a></p>
+        
+        <button class="signBtn">Sign In</button>
+
+        </div>
+        
+        
+           
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="col-4">
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let search = document.querySelector(".search");
+        let textBox = document.querySelector(".textBox");
+        let searchBtn = document.querySelector(".searchBtn");
+        let closeBtn = document.querySelector(".closeBtn");
+
+        //function to open the search box
+        searchBtn.onclick = function(){
+            textBox.classList.add("active");
+            searchBtn.classList.remove('active'); 
+        }
+
+         //function to close the search box
+
+        closeBtn.onclick = function(){
+            textBox.classList.remove("active");
+            searchBtn.classList.add('active'); 
+        }
+
+
+        // this is for the account creation
+        let account = document.querySelector(".account");
+        let signUp = document.querySelector(".signUp");
+        let SignClsBtn = document.querySelector(".SignClsBtn");
+
+        signUp.onclick = function(){
+            account.classList.add("active")
+        }
+        SignClsBtn.onclick = function(){
+            account.classList.remove("active")
+        }
+        signIn.onclick = function(){
+            In.classList.add("active");
+        }
+
+        //this is fot the login account creation
+        let login = document.querySelector(".login");
+        let SignUpClsBtn = document.querySelector(".SignUpClsBtn")
+        
+
+      
+        SignUpClsBtn.onclick = function(){
+            signIn.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

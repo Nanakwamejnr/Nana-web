@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(241, 241, 241);
+    min-height: 100vh;
+    overflow: hidden;
+}
+ header{
+    display: flex;
+    height: 80px;
+    background: white;
+    width: 100%;
+    box-shadow: 0 15px 15px rgba(0, 0,0, 0.09);
+    justify-content: space-between;
+ }
+ nav{
+    margin: 0 50px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    
+ }
+ nav .logo{
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+ }
+ .navigation{
+    display: flex;
+ }
+ ul{
+    gap: 30px;
+ }
+ ul li{
+    list-style-type: none;
+ }
+ ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.5s ease;
+    cursor: pointer;
+ }
+ ul li a:hover{
+    color: crimson;
+ }
+ .search{
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: relative;
+    
+ }
+
+ .search .textBox{
+    opacity: 0;
+    display: flex;
+    border-radius: 5px;
+    background: rgb(243, 242, 240);
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 6px;
+    transition: 0.5s ease;
+ }
+ .search .textBox.active{
+    opacity: 1;
+ }
+ .textBox input{
+    border:none ;
+    outline : none;
+    padding: 5px;
+    font-size: 1rem;
+    background: none;
+    width: 100%;
+ }
+
+ .textBox .searchBtn.active{
+    opacity: 1;
+ }
+ .textBox .closeBtn{
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
+ }
+ .textBox .closeBtn.active{
+    opacity: 1;
+ }
+ .search .icons{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+ .icons .searchBtn{
+    opacity: 0;
+ }
+ .icons .searchBtn.active{
+    opacity: 1;
+ }
+ .account.active{
+    opacity: 1;
+ }
+ .account{
+    right: 110%;
+    top: 100px;
+    opacity: 0;
+    position: absolute;
+    display: grid;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    width: 300px;
+    right: 0;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.5s ;
+    box-shadow: 6px 15px 15px rgba(0.19, 0.19,0.19, 0.17);
+ }
+ .account h1{
+    font-size: 2rem;
+    text-align: center;
+ }
+ input{
+    background: rgb(242, 237, 237);
+    width: 100%;
+    border: none;
+    margin-top: 3px;
+    outline: none;;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    margin: ;
+ }
+ .account .tags{
+    width: 100%;
+    display: ;
+ }
+ .signBtn{
+    background-color: rgb(43, 163, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+ }
+ .account a{
+    text-decoration: none;
+    text-align: center;
+    color: red;
+ }
+ .account .SignClsBtn{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    font-size: 1.5rem;
+    color: rgb(255, 0, 0);
+    opacity: 1;
+    cursor: pointer;
+    padding: 10px;
+
+ }
+ .logIn{
+   opacity: 0;
+    position: relative;
+    display: grid;
+    top: 80px;
+    right: 20px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    width: 300px;
+    right: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.5s ;
+    box-shadow: 6px 15px 15px rgba(0.19, 0.19,0.19, 0.17);
+    
+
+ }
+ .logIn.active{
+    opacity:1 ;
+ }
+ .logIn h1{
+    text-align: center;
+ }
+ .logIn .tags{
+    margin-top: 7px;
+ }
+ .account.signBtn{
+    margin-top: 10px;
+    padding: 6px;
+
+ }
+ .logIn .tags p{
+    margin: 7px;
+ }
+ .logIn a{
+    text-decoration: none;
+ }
+
+ .logIn .SignUpClsBtn{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    font-size: 1.5rem;
+    color: red;
+
+ }
